@@ -11,18 +11,18 @@ var speak = function (words) {
 
 ## Function declarations vs expressions
 
-```
+``` javascript
 //Bad code
 var number = 3250550;
-number = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-number = '$' + number;
+number = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");  // 3,250,550
+number = '$' + number; // $3,250,550
 ```
-```
+``` javascript
 //Good code
 
 var number = 3250550;
-number = addCommas(number); // 3,250,550
-number = addDollarSign(number); // $3,250,550
+number = addCommas(number);
+number = addDollarSign(number);
 
 function addCommas(num){
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -35,7 +35,7 @@ function addDollarSign(num){
 - Making functions do one thing only increases reusability
 - Pure functions mean we don't need to worry about any other part of the code.
 
-```
+``` javascript
 function addDollarSignAndCommas(num){
   num = addCommas(num);
   num = addDollarSign(num);
