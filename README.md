@@ -9,6 +9,18 @@ var speak = function (words) {
 }
 ```
 
+## Return statement
+
+``` javascript
+function sum (x, y) {
+  return x + y
+}
+
+function double (z) {
+  return z * 2
+}
+```
+
 ## Guidelines for using functions
 
 ``` javascript
@@ -17,6 +29,7 @@ var number = 3250550;
 number = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");  // 3,250,550
 number = '$' + number; // $3,250,550
 ```
+
 ``` javascript
 //Good code
 
