@@ -9,7 +9,7 @@ var speak = function (words) {
 }
 ```
 
-## Function declarations vs expressions
+## Guidelines for using functions
 
 ``` javascript
 //Bad code
